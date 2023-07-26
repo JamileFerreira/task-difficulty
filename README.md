@@ -39,5 +39,6 @@ Foi utilizado o StatefulWidgets para mudança de estado e o banco de dados sqlit
 
 - Jamile Ferreira Rocha
 - Maria Vitória de Jesus Damasceno
-- Caio Silva Pontes; Diego Silva dos Santos.
+- Caio Silva Pontes
+- Diego Silva dos Santos.
 
