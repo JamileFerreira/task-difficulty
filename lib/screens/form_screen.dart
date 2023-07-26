@@ -138,7 +138,8 @@ class _FormScreenState extends State<FormScreen> {
                             int.parse(difficultyController.text)));
                         ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(
-                            content: Text('Criando uma nova Tarefa'),
+                            content: Text(
+                                'Criando uma nova Tarefa... Clique no icone de refresh para atualizar!'),
                           ),
                         );
                         Navigator.pop(context);

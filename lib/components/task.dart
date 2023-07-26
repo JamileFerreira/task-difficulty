@@ -121,13 +121,13 @@ class _TaskState extends State<Task> {
                   Padding(
                     padding: const EdgeInsets.all(8),
                     child: SizedBox(
+                      width: 200,
                       child: LinearProgressIndicator(
                         color: Colors.white,
                         value: (widget.difficulty > 0)
                             ? (widget.level / widget.difficulty) / 10
                             : 1,
                       ),
-                      width: 200,
                     ),
                   ),
                   Padding(

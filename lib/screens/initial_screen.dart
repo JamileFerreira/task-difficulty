@@ -19,43 +19,6 @@ class _InitialScreenState extends State<InitialScreen> {
         title: const Center(child: Text('Tarefas')),
         actions: <Widget>[
           IconButton(
-            icon: const Icon(Icons.info),
-            tooltip: 'Cada tarefa tem sua dificuldade',
-            onPressed: () {
-              ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-                  content: Text('Team: Jamile, Vitória, Diego, Caio')));
-            },
-          ),
-          IconButton(
-            icon: const Icon(Icons.navigate_next),
-            tooltip: 'Cada tarefa tem sua dificuldade',
-            onPressed: () {
-              Navigator.push(context, MaterialPageRoute<void>(
-                builder: (BuildContext context) {
-                  return Scaffold(
-                    appBar: AppBar(
-                      title: const Text('Equipe'),
-                    ),
-                    body: const Center(
-                      child: SizedBox(
-                        width: 200,
-                        height: 200,
-                        child: Text(
-                          'Aprendemos muito no curso de Flutter _o/:Equipe: Jamile, Vitória, Diego, Caio',
-                          style: TextStyle(
-                              fontSize: 24,
-                              color: Colors.purple,
-                              fontStyle: FontStyle.italic,
-                              fontFamily: AutofillHints.countryCode),
-                        ),
-                      ),
-                    ),
-                  );
-                },
-              ));
-            },
-          ),
-          IconButton(
             onPressed: () {
               setState(() {});
             },
@@ -111,9 +74,7 @@ class _InitialScreenState extends State<InitialScreen> {
                     return const Center(
                         child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      // não implementado em vídeo por descuido meu, desculpem.
                       crossAxisAlignment: CrossAxisAlignment.center,
-                      // essa linha de layout deixa o conteudo totalmente centralizado.
                       children: [
                         Icon(
                           Icons.error_outline,
@@ -128,7 +89,6 @@ class _InitialScreenState extends State<InitialScreen> {
                   }
                   return const Text('Erro ao carregar tarefas');
               }
-              return const Text('Erro desconhecido');
             }),
       ),
       floatingActionButton: FloatingActionButton(
@@ -140,9 +100,7 @@ class _InitialScreenState extends State<InitialScreen> {
                 taskContext: context,
               ),
             ),
-          ).then((value) => setState(() {
-                print('Recarregando a tela inicial');
-              }));
+          ).then((value) => setState(() {}));
         },
         child: const Icon(Icons.add),
       ),

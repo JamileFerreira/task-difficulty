@@ -12,7 +12,7 @@ class TaskInherited extends InheritedWidget {
     Task('Ler 50 páginas', 'assets/images/ler.jpg', 1),
     Task('Meditar', 'assets/images/meditar.jpg', 4),
     Task('Jogar', 'assets/images/jogar.webp', 1),
-    Task('Correr', 'assets/images/correr.webp', 5),
+    Task('Correr', 'assets//correr.webp', 5),
     Task('Dançar', 'assets/images/dancar.jpg', 3),
   ];
 

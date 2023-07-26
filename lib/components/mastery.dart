@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-//import 'dart:math' as math;
 
 class Mastery extends StatelessWidget {
   final int level;
@@ -9,7 +8,7 @@ class Mastery extends StatelessWidget {
     required this.level,
     required this.dificuldade,
     Key? key,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
